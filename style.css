@@ -1,0 +1,197 @@
+/* --- start of CSS reset --- */
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: none;
+    box-sizing: border-box;
+    background: transparent;
+    font-family: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+a img {
+    border: none;
+}
+
+button,
+a {
+    cursor: pointer;
+    color: inherit;
+}
+
+textarea {
+    resize: none;
+}
+
+button,
+textarea,
+select {
+    appearance: none !important;
+    border-radius: 0;
+}
+
+/* --- end of CSS reset --- */
+
+:root {
+    --primary: #ffeedf;
+    --secondary: #145434;
+}
+
+.material-icons.md-36 {
+    font-size: 36px;
+}
+
+body {
+    -ms-overflow-style: none; 
+    scrollbar-width: none;
+
+    background-color: var(--primary);
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+#root {
+    display: flex;
+    flex-direction: column;
+
+    font-family: 'Space Grotesk', sans-serif;
+    
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 100%;
+    height: 60px;
+
+    padding: 10px;
+
+    background-color: var(--primary);
+
+    border-bottom: 1px solid var(--secondary);
+
+    font-size: 36px;
+    font-weight: bold;
+    color: var(--secondary);
+}
+
+.container {
+    max-width: 1200px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 60px;
+
+    margin: 60px auto;
+
+    padding: 50px;
+}
+
+.card {
+    position: relative;
+
+    width: 380px;
+    min-height: 240px;
+
+    padding: 30px;
+
+    background-color: var(--secondary);
+
+    color: var(--primary);
+}
+
+.card .number {
+    position: absolute;
+    top: -20px;
+    left: -20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 40px;
+    height: 40px;
+
+    border-radius: 20px;
+    border: 2px solid var(--secondary);
+
+    background-color: var(--primary);
+
+    font-size: 24px;
+    color: var(--secondary);
+}
+
+.card p.title {
+    display: flex;
+    min-height: 90px;
+
+    margin-bottom: 5px;
+
+    font-size: 36px;
+    font-weight: normal;
+
+    border-bottom: 1px solid var(--primary);
+}
+
+.card p.sub {
+    font-size: 18px;
+    font-weight: normal;
+
+    margin: 5px 0;
+}
+
+.card p.text {
+    font-size: 18px;
+    font-weight: bold;
+
+    margin-bottom: 30px;
+}
+
+.card button {
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+
+    width: 200px;
+    height: 50px;
+
+    margin-left: 200px;
+
+    background-color: var(--primary);
+
+    border: 2px solid var(--secondary);
+
+    font-size: 14px;
+    color: var(--secondary);
+}
+
+.card button:hover {
+    background-color: var(--secondary);
+    border: 2px solid var(--primary);
+    color: var(--primary);
+}
+
+.card button span {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
