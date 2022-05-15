@@ -1,1 +1,1 @@
-# w18-test-design
+# A design made for the test exam
