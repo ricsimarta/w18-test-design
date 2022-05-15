@@ -1,2 +1,2 @@
-FROM node:10
-CMD echo "started"
+FROM nginx
+COPY . /usr/share/nginx/html
